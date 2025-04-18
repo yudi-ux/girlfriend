@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <title>Quiz sobre Nós</title>
+</head>
+
+<body>
+  <div class="container" id="intro">
+    <p>Opa... não é fácil assim</p>
+    <p>Vamos testar se você realmente é a <span id="girlfriend">MINHA NAMORADA</span></p>
+    <p>Para isso, você deve responder um pequeno quiz</p>
+    <button class="button" id="btn">Vamos lá!</button>
+  </div>
+  <div class="container hidden" id="quiz">
+    <div class="question active" data-question="0">
+      <p>Qual é a data do meu aniversário?</p>
+      <div class="option" data-correct="false">01/01/2008</div>
+      <div class="option" data-correct="false">02/02/2002</div>
+      <div class="option" data-correct="false">02/02/2007</div>
+      <div class="option" data-correct="true">02/02/2008</div>
+    </div>
+    <div class="question" data-question="1">
+      <p>Quem foi o primeiro a puxar assunto?</p>
+      <div class="option" data-correct="false">Você</div>
+      <div class="option" data-correct="true">Eu</div>
+    </div>
+    <div class="question" data-question="2">
+      <p>Qual foi nosso primeiro encontro?</p>
+      <div class="option" data-correct="false">Cinema</div>
+      <div class="option" data-correct="true">Casa da sua vó</div>
+      <div class="option" data-correct="false">Açai</div>
+      <div class="option" data-correct="false">Shopping</div>
+    </div>
+    <div class="question" data-question="3">
+      <p>Quanto custará o nosso casamento?</p>
+      <div class="option" data-correct="false">R$ 1,00</div>
+      <div class="option" data-correct="false">R$ 10⁶,00</div>
+      <div class="option" data-correct="true">R$ 10⁵,00</div>
+      <div class="option" data-correct="false">√10¹⁰,00</div>
+    </div>
+    <div class="question" data-question="4">
+      <p>Quantos filhos nós teremos?</p>
+      <div class="option" data-correct="true">2</div>
+      <div class="option" data-correct="false">17</div>
+      <div class="option" data-correct="false">5</div>
+      <div class="option" data-correct="false">12</div>
+    </div>
+    <div class="question" data-question="5">
+      <p>Quem disse "eu te amo" primeiro?</p>
+      <div class="option" data-correct="false">Eu</div>
+      <div class="option" data-correct="true">Você</div>
+    </div>
+    <div class="question" data-question="6">
+      <p>Quais serão os nomes dos nossos filhos?</p>
+      <div class="option" data-correct="false">Yudi e Isa</div>
+      <div class="option" data-correct="false">Goku e Naruto</div>
+      <div class="option" data-correct="true">Yuri e Agatha</div>
+      <div class="option" data-correct="false">Yudi jr. e Isabele jr.</div>
+    </div>
+  </div>
+  <img id="yudi" class="hidden" src="yudi.png" alt="Yudi" />
+  <img id="isa" class="hidden" src="isa-brava.png" alt="Isa" />
+  <div id="bubble-isa" class="speech-bubble hidden">Estou começando a desconfiar</div>
+  <div id="bubble-yudi" class="speech-bubble hidden">Essa é a minha princesa!</div>
+
+  <div id="final-overlay" class="hidden">
+    <p>Agora sim minha princesa, pode ver sua surpresa 🥰</p>
+    <a id="surpresa" href="#">Ver surpresa!</a>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
